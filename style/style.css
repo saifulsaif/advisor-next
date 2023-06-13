@@ -1,0 +1,608 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #dfe9e5;
+}
+
+/* =========================================
+=================== Default css Start ========================= */
+.active,
+.text-active,
+.text-primary-color {
+    color: #FFC107 !important;
+}
+
+.secondary-button {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 32px;
+    border: 2px solid #FFC107;
+    color: #000;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.secondary-button:hover {
+    border: 2px solid #fff !important;
+    background-color: #FFC107 !important;
+    color: #000;
+    transition: .5s;
+}
+
+.primary-bg {
+    background-color: #FFC107;
+}
+
+.primary-button {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 32px;
+    background-color: #FFC107;
+    border: 2px solid #fff;
+    color: #000;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    border: 2px solid #FFC107;
+    background-color: #fff !important;
+    color: #000;
+    transition: .5s;
+}
+
+.white-hr {
+    background-color: #918888;
+    height: 2px;
+    border: 0px solid #9E9E9E !important;
+}
+
+/* Default css END */
+
+
+
+/* =========================================
+=================== Header section css Start ========================= */
+.main-header-wrapper {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 56px;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-collapse.show {
+    background: #000;
+    padding: 15px 15px 25px;
+}
+
+.navbar-collapse.show a.secondary-button {
+    color: #fff;
+}
+
+.main-header-wrapper .nav-link:hover {
+    color: #FFC107 !important;
+    transition: .5s;
+}
+
+.user-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-toggle::after {
+    color: white;
+}
+
+.footer-item {
+    width: 20%;
+}
+
+/* Header section css END */
+
+/* =========================================
+==================== Hero Section Start ======================== */
+.hero-banner-wrapper {
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/hero.png');
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.hero-b-content-wrap i.fa-solid.fa-circle-check {
+    color: #14BD3A !important;
+    margin-right: 5px;
+}
+
+.hero-video-btn {
+    transform: scale(1);
+    transition: .5s;
+    animation: blink 1s linear infinite;
+}
+
+.hero-video-btn:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: .3;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hero section END./ */
+
+
+/* =========================================
+==================== advisor Section Start ======================== */
+.advisor-banner-wrapper {
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/advisor.png');
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.advisor .nav-link:nth-child(1) {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.advisor .nav-link:nth-child(2) {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.single-advisor {
+    width: 25%;
+    height: 230px;
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.advisor-details {
+    width: 75%;
+}
+
+.single-advisor img {
+    height: 230px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    object-fit: -15;
+    object-fit: cover;
+    object-position: center;
+    object-position: top !important;
+}
+
+.advisor-offer {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4D4D4D;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.active>.page-link,
+.page-link.active {
+    z-index: 3;
+    color: #FFC107;
+    background-color: #252629;
+    border-color: #1a1c1e;
+}
+
+.page-link {
+    color: #000;
+}
+
+.advisor-media {
+    width: 50%;
+    text-align: right;
+    justify-content: right;
+}
+
+.advisor-links {
+    float: right;
+}
+
+.event-banner-wrapper {
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/event.png');
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.event-past {
+    background: #DC3545 !important;
+}
+
+.event-future {
+    background: #157347 !important;
+}
+
+.post-date {
+    background: #FFC107 !important;
+}
+
+.evnt-image-section {
+    position: relative;
+    display: inline-block;
+}
+
+.date {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.post {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event-links {
+    border-radius: 20px;
+    color: black;
+}
+
+.magazin-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-magazin {
+    width: 35%;
+    height: 230px;
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.magazin-banner-wrapper {
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/magazin.png');
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.magazin-details {
+    width: 65%;
+}
+
+.advistor-media {
+    width: 25%;
+}
+
+.global-banner-wrapper {
+    position: relative;
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/magazin.png');
+    min-height: 180;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+/* advisor section END./ */
+/* =========================================
+====================== Search Section css Start ====================== */
+.search-content-wrap .nav-link {
+    border-radius: 0 !important;
+    color: #fff;
+    padding: 12px 40px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.search-content-wrap .nav-link.active {
+    background: #FFC107 !important;
+    color: #000 !important;
+    transition: .5s;
+}
+
+.search-content-wrap .nav-link:nth-child(1) {
+    border-top-left-radius: 20px !important;
+}
+
+.search-content-wrap .nav-link:nth-child(2) {
+    border-top-right-radius: 20px !important;
+}
+
+.search-content-wrap .from-input-wrap {
+    width: 19.4%;
+}
+
+.ew-right button {
+    font-size: 10px;
+}
+
+/* Search Section css END */
+
+
+/* =========================================
+====================== service column Section css Start ====================== */
+.service-column-wrapper {
+    position: relative;
+    padding: 80px 0;
+}
+
+/* service column Section css END */
+
+/* =========================================
+====================== consultants list Section css Start ====================== */
+.single-people-box {
+    position: relative;
+    width: 100%;
+    border-radius: 20px !important;
+    overflow: hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.single-p-b-img {
+    overflow: hidden;
+    height: 214px;
+}
+
+.single-people-box img {
+    transform: scale(1);
+    transition: .5s;
+}
+
+.single-people-box:hover img {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.search-content-wrap .from-input-wrap-event {
+    width: 24%;
+}
+
+/* consultants list Section css END */
+
+
+/* =========================================
+====================== Event list Section css Start ====================== */
+.event-wrapper .single-people-box {
+    border: 1px solid #B4B5B6;
+}
+
+.single-time-date {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+.single-label {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #171717;
+    margin-bottom: 8px;
+}
+
+/* Event list Section css END */
+
+/* =========================================
+====================== Video Section css Start ====================== */
+.video-wrapper iframe {
+    border-radius: 20px !important;
+}
+
+/* Video Section css END */
+
+
+
+/* =========================================
+====================== subscribe Section css Start ====================== */
+.subscribe-wrapper {
+    position: relative;
+
+}
+
+.subscribe-content-wrap {
+    background-image: url('https://beraterstar.com/assets/new-theme-assets/img/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 260px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+button#subscribe_button {
+    height: 44px;
+    background: #000;
+    color: #fff;
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    border: none;
+}
+
+.subscribe-from-wrap>.input-group {
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.subscribe-from-wrap input {
+    border: none !important;
+}
+
+.subscribe-from-wrap input:focus {
+    box-shadow: none;
+}
+
+/* subscribe Section css END */
+
+
+/* =========================================
+====================== footer Section css Start ====================== */
+.single-f-box img {
+    height: 68px;
+    width: 68px;
+}
+
+.single-f-m-box>h5 {
+    color: #FFC107 !important;
+}
+
+.footer-mid-right button#subscribe_button {
+    background-color: #FFC107 !important;
+}
+
+.footer-mid-right {
+    background: #4D4D4D;
+    border-radius: 20px;
+}
+
+/* footer Section css END */
+
+
+/* =========================================
+====================== Testimonial Section css Start ====================== */
+.sfb-img>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    border: 4px solid #fff;
+}
+
+.sfb-orange-ball {
+    position: absolute;
+    content: '';
+    background: #fff;
+    left: -10px;
+    top: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: -1;
+    /* border: 2px solid #FFC107; */
+}
+
+.sfb-white-ball {
+    position: absolute;
+    content: '';
+    background: #FFC107;
+    right: -15px;
+    bottom: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    border: 2px solid #fff;
+}
+
+.sfb-img {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.sfb-text {
+    width: 746px !important;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 100% !important;
+}
+
+.single-feedback-thumbsSlider {
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.single-feedback-thumbsSlider>* {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonial-slider-thumbs .swiper-slide.swiper-slide-visible.swiper-slide-thumb-active {
+    background-color: #FFC107 !important;
+    border-radius: 20px !important;
+}
+
+.swiper-slide-thumb-active .single-feedback-thumbsSlider>* {
+    color: #fff !important;
+}
+
+.swiper-button-next:after {
+    font-size: 15px !important;
+    color: #fff;
+}
+
+.swiper-button-next {
+    background: #FFC107;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+}
+
+.swiper-button-prev:after {
+    font-size: 15px !important;
+    color: #fff;
+}
+
+.swiper-button-prev {
+    background: #FFC107;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+}
+
+/* Testimonial Section css END */
+
+
+/* =========================================
+============================================ */
