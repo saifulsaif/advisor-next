@@ -41,8 +41,8 @@ function magazin() {
                           <div className="advistor-media">
                             <div className="advisor-links text-right d-flex flex-wrap gap-3">
                               <Link
-                                className="advisor-links text-right d-flex flex-wrap gap-3"
-                                href="/magazin/details"
+                                className="btn btn-warning px-4 py-2"
+                                href="/magazin/details/saifui-saif-new-post"
                               >
                                 {" "}
                                 Zum Beitrag{" "}
