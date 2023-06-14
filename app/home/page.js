@@ -1,11 +1,17 @@
-import React from 'react'
 
-function page() {
-    return (
-        <div>
-            <h2>hello home </h2>
+import { fetchUsers } from "@/utils/api";
+
+export default async function Page() {
+  const users = await fetchUsers();
+
+  return (
+    <div>
+      <h1>Welcome to the Homepage</h1>
+      {users.data.map((user) => (
+        <div key={user.id}>
+          {user.name} {user.email}
         </div>
-    )
+      ))}
+    </div>
+  );
 }
-
-export default page

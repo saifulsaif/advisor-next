@@ -3,9 +3,10 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "/style/globals.css";
 import "/style/style.css";
+import "/style/common.css";
 
-import Navbar from "../components/Navbar";
-import TopHeader from "../components/TopHeader";
+import Navbar from "@/components/Navbar";
+import TopHeader from "@/components/TopHeader";
 
 import { Inter } from "next/font/google";
 import Head from "next/head";
