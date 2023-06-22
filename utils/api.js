@@ -1,28 +1,26 @@
 // utils/api.js
-const API_URL = 'http://127.0.0.1:8000/api/v1';
+const API_URL = process.env.API_URL;
 
 export const fetchUsers = async () => {
   try {
-      const response = await fetch(`${API_URL}/users`);
+    const response = await fetch(`${API_URL}/users`);
     if (response) {
       const users = await response.json();
       return users;
     } else {
-      throw new Error('Failed to fetch users');
+      throw new Error("Failed to fetch users");
     }
   } catch (error) {
-    throw new Error('Failed to fetch users');
+    throw new Error("Failed to fetch users");
   }
 };
-
-
 
 export const createUser = async (user) => {
   try {
     const response = await fetch(`${API_URL}/users`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
     });
@@ -30,10 +28,10 @@ export const createUser = async (user) => {
       const newUser = await response.json();
       return newUser;
     } else {
-      throw new Error('Failed to create user');
+      throw new Error("Failed to create user");
     }
   } catch (error) {
-    throw new Error('Failed to create user');
+    throw new Error("Failed to create user");
   }
 };
 

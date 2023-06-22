@@ -9,7 +9,7 @@ export default async function Page() {
       <h1>Welcome to the Homepage</h1>
       {users.data.map((user) => (
         <div key={user.id}>
-          {user.name} {user.email}
+          {user.name} {user.id}
         </div>
       ))}
     </div>
