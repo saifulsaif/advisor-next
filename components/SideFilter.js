@@ -1,22 +1,17 @@
 import React from "react";
 
-function Filter() {
+function SideFilter() {
   return (
     <div>
-      <section className="search-wrapper overflow-hidden py-3 py-sm-5">
+      <section className="search-wrapper overflow-hidden mb-2">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-heading">
-                <h2>Finde den richtigen Berater, Coach oder Experten</h2>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="section-content search-content-wrap mt-4">
+              <div className="section-content search-content-wrap">
                 <nav>
                   <div className="nav nav-tabs" id="nav-tab" role="tablist">
                     <button
-                      className="nav-link active bg-dark border-0"
+                      className="event-filter bg-warning text-dark border-0"
                       id="nav-consultants-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-consultants"
@@ -25,19 +20,7 @@ function Filter() {
                       aria-controls="nav-consultants"
                       aria-selected="false"
                     >
-                      Berater finden:
-                    </button>
-                    <button
-                      className="nav-link bg-dark border-0"
-                      id="nav-event-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-event"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-event"
-                      aria-selected="false"
-                    >
-                      Event finden:{" "}
+                      Event finden
                     </button>
                   </div>
                 </nav>
@@ -60,8 +43,8 @@ function Filter() {
                           name="_token"
                           defaultValue="3nfZT79uTHO8fhTY9Tlq5NqrKidslSG4EaOdNIko"
                         />{" "}
-                        <div className="d-flex flex-wrap gap-2">
-                          <div className="from-input-wrap">
+                        <div className=" flex-wrap gap-2">
+                          <div className="">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -80,7 +63,7 @@ function Filter() {
                               placeholder="Berater Name"
                             />
                           </div>
-                          <div className="from-input-wrap">
+                          <div className="">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -130,7 +113,7 @@ function Filter() {
                               </option>
                             </select>
                           </div>
-                          <div className="from-input-wrap">
+                          <div className="">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -184,7 +167,7 @@ function Filter() {
                               />
                             </span>
                           </div>
-                          <div className="from-input-wrap">
+                          <div className="">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -204,7 +187,7 @@ function Filter() {
                               placeholder="Postleizahl"
                             />
                           </div>
-                          <div className="from-input-wrap">
+                          <div className="">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -260,7 +243,7 @@ function Filter() {
                           </div>
                         </div>
                         <div className="d-flex justify-content-between flex-wrap mt-3">
-                          <div className="from-input-wrap">
+                          <div className="">
                             <button
                               type="submit"
                               className="primary-button d-block w-100"
@@ -268,65 +251,6 @@ function Filter() {
                               <i className="fa-solid fa-magnifying-glass" />{" "}
                               Suchen{" "}
                             </button>
-                          </div>
-                          <div className="evaluation-wrap d-flex align-items-top gap-2">
-                            <div className="ew-left">
-                              <input
-                                type="hidden"
-                                id="star"
-                                name="star"
-                                defaultValue={5}
-                              />
-                              <div
-                                className="form-control d-md-flex d-sm-block"
-                                style={{ border: "none", fontSize: 13 }}
-                              >
-                                <label>Nach Bewertung:</label>
-                                <div className="star-icon d-block align-items-center d-sm-flex">
-                                  <label
-                                    id="select_star"
-                                    data-star={1}
-                                    type="button"
-                                    className="text-warning fa-solid star_1 fa-regular fa-star fs-5 ps-2"
-                                  />
-                                  <label
-                                    id="select_star"
-                                    data-star={2}
-                                    type="button"
-                                    className="text-warning fa-solid star_2 fa-regular fa-star fs-5 ps-2"
-                                  />
-                                  <label
-                                    id="select_star"
-                                    data-star={3}
-                                    type="button"
-                                    className="text-warning fa-solid star_3 fa-regular fa-star fs-5 ps-2"
-                                  />
-                                  <label
-                                    id="select_star"
-                                    data-star={4}
-                                    type="button"
-                                    className="text-warning fa-solid star_4 fa-regular fa-star fs-5 ps-2"
-                                  />
-                                  <label
-                                    id="select_star"
-                                    data-star={5}
-                                    type="button"
-                                    className="text-warning fa-solid star_5 fa-regular fa-star fs-5 ps-2"
-                                  />
-                                </div>
-                                <label htmlFor="">
-                                  <i className="fa-regular fa-slash-forward" />
-                                </label>
-                              </div>
-                            </div>
-                            <div className="ew-right mt-2">
-                              <label
-                                id="select_star"
-                                data-star={0}
-                                type="button"
-                                className="star_0 fa-regular fa-circle-xmark fs-5 ps-2"
-                              />
-                            </div>
                           </div>
                         </div>
                       </form>
@@ -351,7 +275,7 @@ function Filter() {
                           defaultValue="3nfZT79uTHO8fhTY9Tlq5NqrKidslSG4EaOdNIko"
                         />{" "}
                         <div className="d-flex flex-wrap gap-2">
-                          <div className="from-input-wrap-event">
+                          <div className="-event">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-3 align-items-center text-dark"
@@ -370,7 +294,7 @@ function Filter() {
                               placeholder="Event Name"
                             />
                           </div>
-                          <div className="from-input-wrap-event">
+                          <div className="-event">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -420,7 +344,7 @@ function Filter() {
                               </option>
                             </select>
                           </div>
-                          <div className="from-input-wrap-event">
+                          <div className="-event">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -447,7 +371,7 @@ function Filter() {
                               </option>
                             </select>
                           </div>
-                          <div className="from-input-wrap-event">
+                          <div className="-event">
                             <label
                               htmlFor=""
                               className="form-label d-flex gap-2 align-items-center text-dark"
@@ -470,7 +394,7 @@ function Filter() {
                           </div>
                         </div>
                         <div className="d-flex justify-content-between flex-wrap mt-3">
-                          <div className="from-input-wrap">
+                          <div className="">
                             <button
                               type="submit"
                               className="primary-button d-block w-100"
@@ -493,4 +417,4 @@ function Filter() {
   );
 }
 
-export default Filter;
+export default SideFilter;

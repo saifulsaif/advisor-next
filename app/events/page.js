@@ -1,5 +1,6 @@
 import React from "react";
 import Filter from "@/components/Filter";
+import SideFilter from "@/components/SideFilter";
 
 function page() {
   return (
@@ -18,12 +19,30 @@ function page() {
           </div>
         </div>
       </section>
-      <Filter />
-      <section className="advisor-list">
+
+      <section className="advisor-list mt-3 mb-4">
         <div className="container">
           <main className="row justify-center">
-            <div className="col-md-12 card">
-              <div className="p-3 mb-2 border-2 rounded-3">
+            <div className="col-md-6">
+              <div className="section-heading">
+                <h1>Finde den richtigen Berater, Coach oder Experten</h1>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="section-sorting d-flex">
+                <p className="w-50">Event Sorting</p>
+                <select className="form-control w-50">
+                  <option>Latest</option>
+                  <option>Oldest</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="col-md-3">
+              <SideFilter />
+            </div>
+            <div className="col-md-9 card">
+              <div className="p-3 mt-2 mb-2 border-2 rounded-3">
                 <div className="row g-0">
                   <div className="single-advisor evnt-image-section col-md-6 col-lg-4 overflow-hidden">
                     <img
@@ -120,7 +139,7 @@ function page() {
                 </div>
               </div>
               <hr className="p-0 m-0" />
-              <div className="p-3 mb-2 border-2 rounded-3">
+              <div className="p-3 mt-2 mb-2 border-2 rounded-3">
                 <div className="row g-0">
                   <div className="single-advisor evnt-image-section col-md-6 col-lg-4 overflow-hidden">
                     <img

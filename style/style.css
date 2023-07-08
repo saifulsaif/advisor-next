@@ -1100,6 +1100,18 @@ button#subscribe_button {
 
 /* Testimonial Section css END */
 
+.event-filter {
+    border-top-left-radius: 7px !important;
+    border-top-right-radius: 7px !important;
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+}
+
+.section-heading h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
 
 /* =========================================
 ============================================ */

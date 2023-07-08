@@ -6,6 +6,7 @@ export const fetchUsers = async () => {
     const response = await fetch(`${API_URL}/users`);
     if (response) {
       const users = await response.json();
+     
       return users;
     } else {
       throw new Error("Failed to fetch users");
